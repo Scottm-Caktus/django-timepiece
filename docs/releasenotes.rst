@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-0.9.4 (Unreleased)
+Develop (Unreleased)
 ------------------
 
 *Bugfixes*
@@ -10,13 +10,14 @@ Release Notes
 * Require `crm.change_business` permission rather than `crm.edit_business`
   permission for EditUser view.
 * Don't use transaction.commit_on_success on ViewUser or ViewProject views.
+* Fix check for default in `utils.get_setting`
 
 *Code Quality*
 
 * Additional tests and code cleanup in the CRM app.
 
-0.9.3 (Unreleased)
--------------------
+0.9.3 (Released 2013-11-26)
+---------------------------
 
 Related issues are in the `0.9.3. milestone
 <https://github.com/caktus/django-timepiece/issues?milestone=39&state=closed>`_.
