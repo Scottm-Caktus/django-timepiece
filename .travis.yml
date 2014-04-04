@@ -10,8 +10,8 @@ install:
   - pip install -q --use-mirrors tox==1.4.2
 before_script:
   - psql -c 'create database django_timepiece;' -U postgres -w
-  - virtualenv -q --clear --distribute env
-  - source env/bin/activate
+#  - virtualenv -q --clear --distribute env
+#  - source env/bin/activate
   - ./manage.py jenkins --pep8-exclude=migrations --pep8-max-line-length=100 --settings=caktus_website.settings.jenkins touch reports/
 #script:
 #  - run_tests.py
