@@ -12,5 +12,5 @@ install:
 before_script:
   - psql -c 'create database django_timepiece;' -U postgres -w
   
-#script:
-#  - run_tests.py
+script:
+  - run_tests.py
