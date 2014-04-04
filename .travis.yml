@@ -10,5 +10,8 @@ install:
   - pip install -q --use-mirrors tox==1.4.2
 before_script:
   - psql -c 'create database django_timepiece;' -U postgres -w
-script:
-  - run_tests.py
+  - virtualenv -q --clear --distribute env
+  - source env/bin/activate
+  - 
+#script:
+#  - run_tests.py
